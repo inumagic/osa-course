@@ -8,6 +8,7 @@ body {
 }
 
 header {
+    max-width: 100%;
     background: #0073e6;
     color: #fff;
     padding: 1rem 0;
@@ -107,6 +108,22 @@ footer {
 
 .week-buttons button {
     flex: 1 1 auto; /* 讓按鈕自適應大小 */
+    max-width: 150px; /* 按鈕的最大寬度 */
+    min-width: 100px; /* 按鈕的最小寬度 */
+    padding: 10px;
+    text-align: center;
+}
+
+button{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* 按鈕之間的間距 */
+    justify-content: center; /* 按鈕居中對齊 */
+    max-width: 100%; /* 確保內容不超出螢幕 */
+    margin: 0 auto; /* 水平置中 */
+    padding: 10px;
+    box-sizing: border-box; /* 包含 padding 在內計算寬度 */
+     flex: 1 1 auto; /* 讓按鈕自適應大小 */
     max-width: 150px; /* 按鈕的最大寬度 */
     min-width: 100px; /* 按鈕的最小寬度 */
     padding: 10px;
